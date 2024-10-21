@@ -1,0 +1,102 @@
+
+/* General styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e7f1ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centered vertically */
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Container hover effect */
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Title styling */
+h1 {
+    font-size: 26px;
+    color: #004080; /* Dark blue for title */
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Product styling */
+.product {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #cce5ff; /* Light blue border */
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Light blue background for products */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Product hover effect */
+.product:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-1px);
+}
+
+/* Cart styling */
+#cartItems {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Total price styling */
+#totalPrice {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #004080; /* Dark blue for total price */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 400px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
